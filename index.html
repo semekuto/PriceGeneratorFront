@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FX Price Board</title>
+</head>
+<body>
+<div id="app">
+  <h1>リアルタイム為替ボード</h1>
+  <div class="price-container">
+    <div id="USDJPY" class="price-card">
+      <div class="pair-name">USD / JPY</div>
+      <div class="price-value">---.---</div>
+      <div class="timestamp">Wait...</div>
+    </div>
+    <div id="EURJPY" class="price-card">
+      <div class="pair-name">EUR / JPY</div>
+      <div class="price-value">---.---</div>
+      <div class="timestamp">Wait...</div>
+    </div>
+  </div>
+</div>
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
