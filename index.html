@@ -1,25 +1,58 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FX Price Board</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+  <title>FX Dashboard Pro</title>
 </head>
 <body>
 <div id="app">
-  <h1>リアルタイム為替ボード</h1>
+  <h1>FX PRICE MONITOR</h1>
   <div class="price-container">
+
     <div id="USDJPY" class="price-card">
       <div class="pair-name">USD / JPY</div>
-      <div class="price-value">---.---</div>
-      <div class="timestamp">Wait...</div>
+
+      <div class="trade-buttons">
+        <button class="trade-button bid">
+          <span class="label">SELL</span>
+          <span class="price-value">---.---</span>
+        </button>
+        <button class="trade-button ask">
+          <span class="label">BUY</span>
+          <span class="price-value">---.---</span>
+        </button>
+      </div>
+
+      <div class="chart-container">
+        <canvas id="chart-USDJPY"></canvas>
+      </div>
+      <div class="timestamp">Connecting...</div>
     </div>
+
+
+
     <div id="EURJPY" class="price-card">
       <div class="pair-name">EUR / JPY</div>
-      <div class="price-value">---.---</div>
-      <div class="timestamp">Wait...</div>
+
+      <div class="trade-buttons">
+        <button class="trade-button bid">
+          <span class="label">SELL</span>
+          <span class="price-value">---.---</span>
+        </button>
+        <button class="trade-button ask">
+          <span class="label">BUY</span>
+          <span class="price-value">---.---</span>
+        </button>
+      </div>
+
+      <div class="chart-container">
+        <canvas id="chart-EURJPY"></canvas>
+      </div>
+      <div class="timestamp">Connecting...</div>
     </div>
+
   </div>
 </div>
 <script type="module" src="/src/main.ts"></script>
