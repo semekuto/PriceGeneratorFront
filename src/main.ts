@@ -15,7 +15,7 @@ interface ExchangeRate {
 }
 
 const API_BASE_URL = 'http://localhost:8080/exchangerates';
-const TARGET_PAIRS = ['USDJPY', 'EURJPY'];
+const TARGET_PAIRS = ['USDJPY', 'EURJPY','EURUSD'];
 const MAX_HISTORY = 20;
 
 const charts: Record<string, Chart> = {};
